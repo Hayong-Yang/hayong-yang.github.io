@@ -228,3 +228,55 @@ button:focus {
 }
 
 /* about 끝 */
+
+/* skills 시작 */
+#skills {
+  background-color: var(--color-primary-varient);
+  color: var(--color-text);
+}
+.tools {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  margin: 2rem 3rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.tools__title {
+  color: var(--color-accent);
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+.tools__coding {
+  /* 2개 행을 차지하도록 설정함 */
+  grid-row: span 2;
+  padding: 1rem;
+  background-color: var(--color-primary);
+}
+.bar {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+.bar__metadata {
+  display: flex;
+  justify-content: space-between;
+}
+.bar__bg {
+  width: 100%;
+  height: 3%;
+  background-color: var(--color-primary-varient);
+}
+.bar__value {
+  height: 3px;
+  background-color: var(--color-accent);
+}
+.tools__tools {
+  padding: 1rem;
+}
+.tools__etc {
+  padding: 1rem;
+  background-color: var(--color-primary);
+  filter: brightness(150%);
+}
+/* skills 끝 */
