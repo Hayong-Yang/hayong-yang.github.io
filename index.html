@@ -47,8 +47,8 @@
         <ul class="header__menu">
           <li><a href="#home" class="header__menu__item active">홈으로</a></li>
           <li><a href="#about" class="header__menu__item">Hayong</a></li>
-          <li><a href="#skill" class="header__menu__item">기술</a></li>
-          <li><a href="work" class="header__menu__item">포트폴리오</a></li>
+          <li><a href="#skills" class="header__menu__item">기술</a></li>
+          <li><a href="#work" class="header__menu__item">포트폴리오</a></li>
           <li><a href="#license" class="header__menu__item">자격증</a></li>
           <li><a href="#contact" class="header__menu__item">연락처</a></li>
         </ul>
@@ -210,98 +210,140 @@
       </section>
       <!-- skills 끝 -->
       <!-- work 시작 -->
-      <section id="work">
-        <h2>포트폴리오</h2>
-        <p>Projects</p>
-        <ul>
-          <li>
-            <button>ALL <span>10</span></button>
-          </li>
-          <li>
-            <button>Front-end <span>3</span></button>
-          </li>
-          <li>
-            <button>Mobile <span>3</span></button>
-          </li>
-          <li>
-            <button>AI <span>4</span></button>
-          </li>
-        </ul>
-        <ul>
-          <!-- targer _black 하게되면 새 탭으로 창을 띄움 -->
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/project.jpg" alt="project 이미지" />
-              <div>
-                <h3>Project #1</h3>
-                <p>project noname</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/project.jpg" alt="project 이미지" />
-              <div>
-                <h3>Project #2</h3>
-                <p>project noname</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/project.jpg" alt="project 이미지" />
-              <div>
-                <h3>Project #3</h3>
-                <p>project noname</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/project.jpg" alt="project 이미지" />
-              <div>
-                <h3>Project #4</h3>
-                <p>project noname</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/project.jpg" alt="project 이미지" />
-              <div>
-                <h3>Project #5</h3>
-                <p>project noname</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/project.jpg" alt="project 이미지" />
-              <div>
-                <h3>Project #6</h3>
-                <p>project noname</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/project.jpg" alt="project 이미지" />
-              <div>
-                <h3>Project #7</h3>
-                <p>project noname</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/project.jpg" alt="project 이미지" />
-              <div>
-                <h3>Project #8</h3>
-                <p>project noname</p>
-              </div>
-            </a>
-          </li>
-        </ul>
+      <section id="work" class="section">
+        <div class="max-contatiner">
+          <h2 class="title">포트폴리오</h2>
+          <p class="description">Projects</p>
+          <ul class="categories">
+            <li>
+              <button class="category category--selected">
+                ALL <span class="categoty__count">10</span>
+              </button>
+            </li>
+            <li>
+              <button class="category">
+                Front-end <span class="categoty__count">3</span>
+              </button>
+            </li>
+            <li>
+              <button class="category">
+                Mobile <span class="categoty__count">3</span>
+              </button>
+            </li>
+            <li>
+              <button class="category">
+                AI <span class="categoty__count">4</span>
+              </button>
+            </li>
+          </ul>
+          <ul class="projects">
+            <!-- targer _black 하게되면 새 탭으로 창을 띄움 -->
+            <li class="project">
+              <a href="#" target="_blank">
+                <img
+                  src="./images/project.jpg"
+                  alt="project 이미지"
+                  class="priject__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #1</h3>
+                  <p>project noname</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img
+                  src="./images/project.jpg"
+                  alt="project 이미지"
+                  class="priject__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #2</h3>
+                  <p>project noname</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img
+                  src="./images/project.jpg"
+                  alt="project 이미지"
+                  class="priject__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #3</h3>
+                  <p>project noname</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img
+                  src="./images/project.jpg"
+                  alt="project 이미지"
+                  class="priject__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #4</h3>
+                  <p>project noname</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img
+                  src="./images/project.jpg"
+                  alt="project 이미지"
+                  class="priject__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #5</h3>
+                  <p>project noname</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img
+                  src="./images/project.jpg"
+                  alt="project 이미지"
+                  class="priject__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #6</h3>
+                  <p>project noname</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img
+                  src="./images/project.jpg"
+                  alt="project 이미지"
+                  class="priject__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #7</h3>
+                  <p>project noname</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a href="#" target="_blank">
+                <img
+                  src="./images/project.jpg"
+                  alt="project 이미지"
+                  class="priject__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #8</h3>
+                  <p>project noname</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- work 끝 -->
       <!-- license 시작 -->
