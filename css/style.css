@@ -87,7 +87,7 @@ button:focus {
 /* header 시작 */
 
 .header {
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-varient);
   position: fixed;
   top: 0;
   width: 100%;
@@ -96,6 +96,10 @@ button:focus {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
+}
+
+.header--dark {
+  background-color: var(--color-primary);
 }
 
 .header__logo {
@@ -111,6 +115,15 @@ button:focus {
 
 .header__logo__title {
   font-size: 1.8rem;
+}
+
+.header__toggle {
+  color: var(--color-white);
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1.3rem;
+  right: 1rem;
+  display: none;
 }
 
 .header__menu {
@@ -137,6 +150,7 @@ button:focus {
   color: var(--color-text);
   padding: 7rem 1rem 5rem;
   text-align: center;
+  padding-top: 7rem;
 }
 
 .home__avatar {
@@ -176,14 +190,14 @@ button:focus {
 /* Home 끝 */
 
 /* about 시작 */
-.skills {
+.majors {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
   margin: 2.5rem 0;
 }
 
-.skill {
+.major {
   background-color: var(--color-primary-varient);
   padding: 2rem 1rem;
   color: var(--color-text);
@@ -191,16 +205,16 @@ button:focus {
   cursor: default;
   box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.4);
 }
-.skill__icon {
+.major__icon {
   font-size: 4rem;
   margin: 1rem 0;
   color: var(--color-accent);
   transition: all 300ms ease;
 }
-.skill:hover .skill__icon {
+.major:hover .major__icon {
   transform: rotate(-15deg) scale(1.2);
 }
-.skill__title {
+.major__title {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -234,19 +248,19 @@ button:focus {
   background-color: var(--color-primary-varient);
   color: var(--color-text);
 }
-.tools {
+.skills {
   display: grid;
   grid-template-columns: 6fr 4fr;
   margin: 2rem 3rem;
   border-radius: 8px;
   overflow: hidden;
 }
-.tools__title {
+.skills__title {
   color: var(--color-accent);
   margin: 1rem 0;
   font-size: 1.2rem;
 }
-.tools__coding {
+.skills__coding {
   /* 2개 행을 차지하도록 설정함 */
   grid-row: span 2;
   padding: 1rem;
@@ -271,10 +285,10 @@ button:focus {
   height: 3px;
   background-color: var(--color-accent);
 }
-.tools__tools {
+.skills__tools {
   padding: 1rem;
 }
-.tools__etc {
+.skills__etc {
   padding: 1rem;
   background-color: var(--color-primary);
   filter: brightness(150%);
@@ -331,6 +345,11 @@ button:focus {
   grid-template-rows: repeat(2, 1fr);
   gap: 1rem;
 }
+.projects.anim-out {
+  opacity: 0;
+  transform: scale(0.9) translateY(20px);
+}
+
 .project {
   position: relative;
   border-radius: 8px;
@@ -417,7 +436,8 @@ button:focus {
   border-radius: 100%;
   text-align: center;
   box-shadow: 5px 5px 0px 0px var(--color-accent);
-  transition: transform 250ms ease-in;
+  transition: transform 1s ease-in;
+  opacity: 0;
 }
 .arrow-up:hover {
   transform: scale(1.1);
@@ -443,3 +463,79 @@ button:focus {
   color: var(--color-accent);
 }
 /* footer 끝 */
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 3rem 2rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+  .header {
+    flex-direction: column;
+    align-items: start;
+  }
+  .header__toggle {
+    display: block;
+  }
+  .header__menu {
+    /* display: none; */
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 4rem;
+    gap: 1rem;
+  }
+  .header__menu.open {
+    display: flex;
+  }
+  .header__nav {
+    width: 100%;
+  }
+  #home {
+    padding-bottom: 3rem;
+  }
+  #home__title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .majors {
+    flex-direction: column;
+    align-items: center;
+  }
+  .major {
+    max-width: 25rem;
+  }
+  .job {
+    width: 100%;
+    justify-content: center;
+  }
+  .job__img {
+    width: 150px;
+    height: 100px;
+  }
+  .skills {
+    grid-template-columns: 1fr;
+  }
+  .categories {
+    flex-direction: column;
+  }
+  .category {
+    width: 100%;
+  }
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .license {
+    flex-direction: column;
+  }
+  .arrow-up {
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+}
